@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>hello!</title>
   </head>
   <body>
 
 <?php
 
-var_dump($_GET);
+echo($_POST['id']);
+echo'<br>';
+echo($_POST['name']);
+echo",Hello!" ;  
 
 ?>
 

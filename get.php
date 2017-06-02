@@ -7,18 +7,18 @@
 
   <body>
   <?php
-  	if( !isset($_GET['name'],$_GET['nr'],$_GET['mf'],$_GET['pw']) ||
-  		strlen($_GET['name']) == 0 ||
-  		strlen($_GET['nr']) == 0 ||
-  		strlen($_GET['mf']) == 0 ||
-  		strlen($_GET['pw']) == 0
+  	if( !isset($_POST['name'],$_POST['nr'],$_POST['mf'],$_POST['pw']) ||
+  		strlen($_POST['name']) == 0 ||
+  		strlen($_POST['nr']) == 0 ||
+  		strlen($_POST['mf']) == 0 ||
+  		strlen($_POST['pw']) == 0
   	)
   	{
   		echo 'Missing Data';
   	}
   	else
   	{
-  		foreach($_GET as $k => $v)
+  		foreach($_POST as $k => $v)
   		{
   			echo "$k is $v.";
   			echo "<br>";
